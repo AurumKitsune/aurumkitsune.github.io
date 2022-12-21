@@ -1,0 +1,45 @@
+body {
+	height: 100vh;
+	margin: 0px;
+	display: flex;
+	flex-direction: column;
+}
+
+header {
+	background-color: #0f082c;
+	display: flex;
+	align-items: center;
+}
+
+.navigation-menu {
+	padding: 16px 12px;
+}
+
+.navigation-menu a {
+	padding: 0px 8px;
+	color: #a972ff;
+	text-decoration: none;
+}
+
+.content {
+	background-color: #3f3956;
+	color: #dcc7ff;
+	display: flex;
+	flex: auto;
+	flex-direction: column;
+}
+
+.center {
+	justify-content: center;
+	align-items: center;
+}
+
+.input-area {
+	padding: 12px;
+	display: flex;
+	flex-direction: column;
+}
+
+.input-area label {
+	padding: 8px 0px 0px 0px;
+}
