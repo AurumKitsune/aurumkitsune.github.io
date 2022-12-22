@@ -1,3 +1,11 @@
+:root {
+	--dark-purple1: #0f082c;
+	--dark-purple2: #3f3956;
+	--purple1: #a972ff;
+	--purple2: #ba8eff;
+	--purple4: #dcc7ff;
+}
+
 body {
 	height: 100vh;
 	margin: 0px;
@@ -6,9 +14,14 @@ body {
 }
 
 header {
-	background-color: #0f082c;
+	background-color: var(--dark-purple1);
 	display: flex;
 	align-items: center;
+}
+
+a {
+	text-decoration: none;
+	color: var(--purple4);
 }
 
 .navigation-menu {
@@ -17,29 +30,57 @@ header {
 
 .navigation-menu a {
 	padding: 0px 8px;
-	color: #a972ff;
-	text-decoration: none;
+	color: var(--purple1);
+}
+
+.navigation-menu a:not(:last-of-type) {
+	border-right: 2px solid var(--purple2);
 }
 
 .content {
-	background-color: #3f3956;
-	color: #dcc7ff;
+	background-color: var(--dark-purple2);
+	color: var(--purple4);
 	display: flex;
 	flex: auto;
+}
+
+.flex-column {
 	flex-direction: column;
 }
 
 .center {
-	justify-content: center;
 	align-items: center;
 }
 
 .input-area {
-	padding: 12px;
+	padding: 8% 0px 16px 0px;
 	display: flex;
 	flex-direction: column;
 }
 
 .input-area label {
-	padding: 8px 0px 0px 0px;
+	padding-top: 8px;
+}
+
+.input-area .checkbox {
+	padding-top: 12px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.checkbox-label {
+	padding: 8px;
+	border: 2px solid var(--purple1);
+	border-radius: 8px;
+	background: var(--dark-purple2);
+	cursor: pointer;
+}
+
+.checkbox-input {
+	display: none;
+}
+
+.checkbox-input:checked + .checkbox-label {
+	background: var(--dark-purple1);
 }
