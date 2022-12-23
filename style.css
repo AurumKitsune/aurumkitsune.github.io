@@ -1,9 +1,16 @@
 :root {
 	--dark-purple1: #0f082c;
 	--dark-purple2: #3f3956;
+	--dark-purple3: #686080;
 	--purple1: #a972ff;
 	--purple2: #ba8eff;
+	--purple3: #cbabff;
 	--purple4: #dcc7ff;
+	--purple5: #f0e0ff;
+	--indigo1: #3e2ca6;
+	--indigo2: #6556c8;
+	--indigo3: #8b80d8;
+	--indigo4: #aca4ff;
 }
 
 body {
@@ -20,8 +27,7 @@ header {
 }
 
 a {
-	text-decoration: none;
-	color: var(--purple4);
+	color: #aca4ff;
 }
 
 .navigation-menu {
@@ -31,20 +37,28 @@ a {
 .navigation-menu a {
 	padding: 0px 8px;
 	color: var(--purple1);
+	text-decoration: none;
 }
 
 .navigation-menu a:not(:last-of-type) {
-	border-right: 2px solid var(--purple2);
+	border-right: 2px solid var(--dark-purple3);
 }
 
 .content {
+	padding: 32px;
 	background-color: var(--dark-purple2);
 	color: var(--purple4);
 	display: flex;
 	flex: auto;
 }
 
+.flex-row {
+	display: flex;
+	flex-direction: row;
+}
+
 .flex-column {
+	display: flex;
 	flex-direction: column;
 }
 
@@ -82,5 +96,11 @@ a {
 }
 
 .checkbox-input:checked + .checkbox-label {
-	background: var(--dark-purple1);
+	background: var(--dark-purple3);
+	color: var(--purple5);
+}
+
+.portfolio-entry img {
+	padding: 32px;
+	border-radius: 48px;
 }
