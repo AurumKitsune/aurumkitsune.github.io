@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Sorting Visualizer</title>
+		<link rel="stylesheet" href="style.css"/>
+		<script src='script.js' defer></script>
+	</head>
+	<body>
+		<header>
+			<div class="center">
+				<div class="range-slider">
+					<label class="array-size-label" for="array-size-slider">75</label>
+					<input type="range" min="5" max="150" value="75" id="array-size-slider"/>
+				</div>
+				<button id="generate-array">Generate New Array</button>
+			</div>
+			<h1>Sorting Visualizer</h1>
+			<div class="center">
+				<div class="sorting-buttons">
+					<input type="radio" name="sort-select" value="1" class="sort-input" id="bubble-sort" checked="1"/>
+					<label class="sort-label" for="bubble-sort">Bubble</label>
+					<input type="radio" name="sort-select" value="2" class="sort-input" id="selection-sort"/>
+					<label class="sort-label" for="selection-sort">Selection</label>
+					<input type="radio" name="sort-select" value="3" class="sort-input" id="insertion-sort"/>
+					<label class="sort-label" for="insertion-sort">Insertion</label>
+					<input type="radio" name="sort-select" value="4" class="sort-input" id="merge-sort"/>
+					<label class="sort-label" for="merge-sort">Merge</label>
+					<input type="radio" name="sort-select" value="5" class="sort-input" id="radix-sort"/>
+					<label class="sort-label" for="radix-sort">Radix</label>
+				</div>
+				<button id="start-sort">Start Sorting</button>
+			</div>
+		</header>
+		<main>
+			<div class="array-display"></div>
+		</main>
+		<footer>
+			<div id="time-taken">Time Taken: 0</div>
+			<div id="comparisons">Comparisons: 0</div>
+			<div id="array-writes">Array Writes: 0</div>
+			<div id="secondary-writes">Secondary Writes: 0</div>
+		</footer>
+	</body>
+</html>
