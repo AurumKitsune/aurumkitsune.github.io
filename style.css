@@ -48,7 +48,6 @@ a {
 	padding: 32px;
 	background-color: var(--dark-purple2);
 	color: var(--purple4);
-	display: flex;
 	flex: auto;
 }
 
