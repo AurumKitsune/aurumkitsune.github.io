@@ -1,0 +1,166 @@
+@import url('dark-theme.css');
+@media (prefers-color-scheme: light) {
+	@import url('light-theme.css');
+}
+
+@font-face {
+	font-family: "Font Awesome Solid";
+	src: url("../fonts/fa-solid-900.ttf");
+}
+
+* {
+	color: var(--text);
+}
+
+body {
+	height: 100vh;
+	margin: 0px;
+	display: flex;
+	flex-direction: column;
+	background-color: var(--background);
+	font-size: 18px;
+}
+
+a {
+	color: var(--primary);
+}
+
+h1, h2, h3 {
+	line-height: 1;
+}
+
+p {
+	max-width: 750px;
+}
+
+.center-text {
+	text-align: center;
+}
+
+input[type="text"] {
+	margin: 0.5vw;
+	padding: 1vw;
+	background-color: var(--surface);
+	border: 2px solid var(--background);
+	border-radius: 0.5vw;
+	font-size: medium;
+}
+
+input[type="text"]:focus {
+	outline: none !important;
+	border: 2px solid var(--primary);
+}
+
+input[type="text"]::placeholder {
+	opacity: 0.75;
+}
+
+button {
+	cursor: pointer;
+	padding: 8px 12px;
+	border: 1px solid var(--outline);
+	border-radius: 100px;
+	background-color: var(--surface);
+}
+
+button:hover {
+	background-color: var(--surface-variant);
+}
+
+button:active {
+	border-color: var(--primary);
+	background-color: var(--primary);
+}
+
+.primary-color {
+	color: var(--primary);
+}
+
+.navigation-menu {
+	padding: 12px;
+}
+
+.navigation-menu a {
+	padding: 12px 8px 6px 8px;
+	color: var(--primary);
+	text-decoration: none;
+}
+
+.navigation-menu a.selected {
+	border-bottom: 2px solid var(--primary);
+}
+
+.content {
+	margin: 40px auto;
+	padding: 0 10px;
+	line-height: 1.6;
+	flex: auto;
+}
+
+.flex-row {
+	display: flex;
+	flex-direction: row;
+}
+
+.flex-column {
+	display: flex;
+	flex-direction: column;
+}
+
+.center-row {
+	align-items: center;
+}
+
+.center-column {
+	justify-content: center;
+}
+
+.switch input {
+	display: none;
+}
+
+.switch .switch-label {
+	cursor: pointer;
+	margin-right: 0.6rem;
+}
+
+.switch .switch-dot {
+	cursor: pointer;
+	position: relative;
+	width: 46px;
+	height: 22px;
+	border: 2px solid var(--outline);
+	border-radius: 100px;
+	display: block;
+	background: var(--surface-variant);
+	font-size: 12px;
+	font-family: "Font Awesome Solid";
+	color: var(--background);
+	line-height: 20px;
+	text-align: center;
+}
+
+.switch .switch-dot:after {
+	content: '';
+	position: absolute;
+	top: 1px;
+	left: 1px;
+	width: 20px;
+	height: 20px;
+	background: var(--outline);
+	border-radius: 100px;
+	transform: scale(0.8);
+	transition: 0.25s;
+}
+
+.switch input:checked + .switch-dot{
+	background: var(--primary);
+	border: 2px solid var(--primary);
+}
+
+.switch input:checked + .switch-dot:after {
+	content: '';
+	left: calc(100% - 1px);
+	transform: translateX(-100%);
+	background: var(--text);
+}

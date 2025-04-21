@@ -1,0 +1,20 @@
+.portfolio-container {
+	display: grid;
+	grid-template-columns: 35% 35%;
+	justify-content: center;
+	align-items: center;
+	column-gap: 5vw;
+	row-gap: 10vh;
+}
+
+@media ( width <= 600px ) {
+	.portfolio-container {
+		grid-template-columns: 95%;
+		row-gap: 4vh;
+	}
+}
+
+.portfolio-container img {
+	border-radius: 16px;
+	width: 100%;
+}

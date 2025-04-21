@@ -1,11 +1,11 @@
-<!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <!-- <meta http-equiv="refresh" content="3"/> -->
-		<link rel="stylesheet" href="style.css"/>
-		<script src="arknights-calc.js" defer></script>
+		<link rel="stylesheet" href="css/default.css"/>
+		<link rel="stylesheet" href="css/arknights-calc.css"/>
+		<script src="scripts/arknights-calc.js" defer></script>
 		<title>Arknights Pull Calculator</title>
 	</head>
 	<body>
@@ -17,17 +17,18 @@
 				<a href="recipes.html">Recipes</a>
 			</div>
 		</header>
-		<div class="content flex-column center">
+		<div class="content flex-column center-row center-column">
 			<div class="input-area">
 				<input type="text" placeholder="Orundum" id="orundum"/>
 				<input type="text" placeholder="Originite Prime" id="originite"/>
 				<input type="text" placeholder="Headhunting Permits" id="headhunting"/>
-				<div class="checkbox">
-					<input type="checkbox" id="yellow-certs" class="checkbox-input"/>
-					<label for="yellow-certs" class="checkbox-label">258 Yellow Certs</label>
+				<div class="switch">
+					<label for="yellow-certs" class="switch-label">258 Yellow Certs</label>
+					<input type="checkbox" id="yellow-certs"/>
+                    <label for="yellow-certs" class="switch-dot"></label>
 				</div>
 			</div>
-			<div class="pulls">You have 0 pulls</div>
+			<h3 class="pulls">You have 0 pulls</h3>
 		</div>
 	</body>
 </html>
