@@ -1,20 +1,23 @@
 /* dark */
 :root {
-    --text: #FFFFFF;
+    --transparent: #FFFFFF00;
+    --text: #F2F2F2;
     --background: #121212;
     --surface: #242424;
 	--surface-variant: #49454F;
 	--outline: #79747E;
     --primary: #BB86FC;
-    --secondary: #03DAC6;
+    --secondary: #89DCEB;
+    --accent: #46C790;
 }
 
 .light {
-    --text: #000000;
-    --background: #FFFFFF;
+    --text: #0E0E0E;
+    --background: #EDEDED;
     --surface: #DDDDDD;
 	--surface-variant: #BBBBBB;
 	--outline: #79747E;
-    --primary: #6200EE;
-    --secondary: #03DAC6;
+    --primary: #5F1EA9;
+    --secondary: #04A7E7;
+    --accent: #37B980;
 }

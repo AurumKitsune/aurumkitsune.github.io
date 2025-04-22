@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<title>Recipes</title>
 		<meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 		<link rel="stylesheet" href="css/default.css"/>
-		<title>Recipes</title>
+		<script src="scripts/theme_switcher.js" defer></script>
 	</head>
 	<body>
 		<header>
@@ -13,6 +14,8 @@
 				<a href="portfolio.html">Portfolio</a>
 				<a href="arknights-calc.html">AK Pull Calculator</a>
 				<a class="selected" href="recipes.html">Recipes</a>
+                <div style="flex-grow:1"></div>
+                <button id="theme-button" class="icon-button" onclick="switchTheme()"></button>
 			</div>
 		</header>
 		<div class="content flex-column center-row">

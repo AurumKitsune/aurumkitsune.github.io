@@ -1,12 +1,13 @@
 <html>
 	<head>
+		<title>Arknights Pull Calculator</title>
 		<meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <!-- <meta http-equiv="refresh" content="3"/> -->
 		<link rel="stylesheet" href="css/default.css"/>
 		<link rel="stylesheet" href="css/arknights-calc.css"/>
+		<script src="scripts/theme_switcher.js" defer></script>
 		<script src="scripts/arknights-calc.js" defer></script>
-		<title>Arknights Pull Calculator</title>
 	</head>
 	<body>
 		<header>
@@ -15,6 +16,8 @@
 				<a href="portfolio.html">Portfolio</a>
 				<a class="selected" href="arknights-calc.html">AK Pull Calculator</a>
 				<a href="recipes.html">Recipes</a>
+                <div style="flex-grow:1"></div>
+                <button id="theme-button" class="icon-button" onclick="switchTheme()"></button>
 			</div>
 		</header>
 		<div class="content flex-column center-row center-column">

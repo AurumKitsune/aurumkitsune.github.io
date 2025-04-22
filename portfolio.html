@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<title>Portfolio</title>
 		<meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <!-- <meta http-equiv="refresh" content="3"/> -->
 		<link rel="stylesheet" href="css/default.css"/>
 		<link rel="stylesheet" href="css/portfolio.css"/>
-		<title>Portfolio</title>
+		<script src="scripts/theme_switcher.js" defer></script>
 	</head>
 	<body>
 		<header>
@@ -15,6 +16,8 @@
 				<a class="selected" href="portfolio.html">Portfolio</a>
 				<a href="arknights-calc.html">AK Pull Calculator</a>
 				<a href="recipes.html">Recipes</a>
+                <div style="flex-grow:1"></div>
+                <button id="theme-button" class="icon-button" onclick="switchTheme()"></button>
 			</div>
 		</header>
 		<div class="content portfolio-container">

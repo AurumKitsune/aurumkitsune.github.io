@@ -22,6 +22,7 @@ body {
 	flex-direction: column;
 	background-color: var(--background);
 	font-size: 18px;
+    transition: background-color 0.15s linear;
 }
 
 a {
@@ -34,6 +35,10 @@ h1, h2, h3 {
 
 p {
 	max-width: 750px;
+}
+
+.notransition {
+    transition: none !important;
 }
 
 .center-text {
@@ -66,13 +71,21 @@ input[type="text"]::placeholder {
 	background-color: var(--surface);
 }
 
-button:hover {
+.outline-button:hover {
 	background-color: var(--surface-variant);
 }
 
-button:active {
+.outline-button:active {
 	border-color: var(--primary);
 	background-color: var(--primary);
+}
+
+.icon-button {
+	cursor: pointer;
+	border: 0;
+    background-color: var(--transparent);
+    color: var(--primary);
+    font-size: 24px;
 }
 
 .primary-color {
@@ -80,11 +93,14 @@ button:active {
 }
 
 .navigation-menu {
-	padding: 12px;
+	display: flex;
+	flex-direction: row;
+	padding: 0px 12px;
+    gap: 8px;
 }
 
 .navigation-menu a {
-	padding: 12px 8px 6px 8px;
+	padding: 8px;
 	color: var(--primary);
 	text-decoration: none;
 }
