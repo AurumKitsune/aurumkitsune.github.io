@@ -58,7 +58,7 @@ input[type="text"]::placeholder {
 	opacity: 0.75;
 }
 
-button {
+.outline-button {
 	cursor: pointer;
 	padding: 8px 12px;
 	border: 1px solid var(--outline);
@@ -91,6 +91,10 @@ button:active {
 
 .navigation-menu a.selected {
 	border-bottom: 2px solid var(--primary);
+}
+
+#theme-button {
+	font-family: "Font Awesome Solid";
 }
 
 .content {
