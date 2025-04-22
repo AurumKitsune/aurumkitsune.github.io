@@ -1,0 +1,20 @@
+/* dark */
+:root {
+    --text: #FFFFFF;
+    --background: #121212;
+    --surface: #242424;
+	--surface-variant: #49454F;
+	--outline: #79747E;
+    --primary: #BB86FC;
+    --secondary: #03DAC6;
+}
+
+.light {
+    --text: #000000;
+    --background: #FFFFFF;
+    --surface: #DDDDDD;
+	--surface-variant: #BBBBBB;
+	--outline: #79747E;
+    --primary: #6200EE;
+    --secondary: #03DAC6;
+}
