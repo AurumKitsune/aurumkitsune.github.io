@@ -10,6 +10,11 @@
 	src: url("../fonts/fa-solid-900.ttf");
 }
 
+@font-face {
+	font-family: "Font Awesome Brands";
+	src: url("../fonts/fa-brands-400.otf");
+}
+
 @media (min-width:480px)  {
 
 }
@@ -33,10 +38,11 @@ a {
 	color: var(--primary);
 }
 
-.icon-link {
+.brand-link {
 	margin: 0px 16px;
 	text-decoration: none;
 	color: var(--text);
+	font-family: "Font Awesome Brands";
 	font-size: 48px;
 }
 
