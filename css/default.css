@@ -10,6 +10,10 @@
 	src: url("../fonts/fa-solid-900.ttf");
 }
 
+@media (min-width:480px)  {
+
+}
+
 * {
 	color: var(--text);
 	font-family: "Inter";
@@ -22,11 +26,18 @@ body {
 	flex-direction: column;
 	background-color: var(--background);
 	font-size: 18px;
-    transition: background-color 0.15s linear;
+	transition: background-color 0.15s linear;
 }
 
 a {
 	color: var(--primary);
+}
+
+.icon-link {
+	margin: 0px 16px;
+	text-decoration: none;
+	color: var(--text);
+	font-size: 48px;
 }
 
 h1, h2, h3 {
@@ -38,7 +49,7 @@ p {
 }
 
 .notransition {
-    transition: none !important;
+	transition: none !important;
 }
 
 .center-text {
@@ -46,11 +57,11 @@ p {
 }
 
 input[type="text"] {
-	margin: 0.5vw;
-	padding: 1vw;
+	margin: 8px;
+	padding: 16px;
 	background-color: var(--surface);
 	border: 2px solid var(--background);
-	border-radius: 0.5vw;
+	border-radius: 8px;
 	font-size: medium;
 }
 
@@ -83,9 +94,10 @@ input[type="text"]::placeholder {
 .icon-button {
 	cursor: pointer;
 	border: 0;
-    background-color: var(--transparent);
-    color: var(--primary);
-    font-size: 24px;
+	background-color: var(--transparent);
+	color: var(--primary);
+	font-family: "Font Awesome Solid";
+	font-size: 24px;
 }
 
 .primary-color {
@@ -96,7 +108,7 @@ input[type="text"]::placeholder {
 	display: flex;
 	flex-direction: row;
 	padding: 0px 12px;
-    gap: 8px;
+	gap: 8px;
 }
 
 .navigation-menu a {
@@ -107,10 +119,6 @@ input[type="text"]::placeholder {
 
 .navigation-menu a.selected {
 	border-bottom: 2px solid var(--primary);
-}
-
-#theme-button {
-	font-family: "Font Awesome Solid";
 }
 
 .content {

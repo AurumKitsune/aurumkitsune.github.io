@@ -20,8 +20,9 @@
                 <button id="theme-button" class="icon-button" onclick="switchTheme()"></button>
 			</div>
 		</header>
-		<div class="content flex-column center-row center-column">
-			<div class="input-area">
+		<div class="content flex-column center-column">
+			<div style="flex-grow:1"></div>
+			<div class="input-area flex-column center-row" style="flex-grow:2">
 				<input type="text" placeholder="Orundum" id="orundum"/>
 				<input type="text" placeholder="Originite Prime" id="originite"/>
 				<input type="text" placeholder="Headhunting Permits" id="headhunting"/>
@@ -30,8 +31,9 @@
 					<input type="checkbox" id="yellow-certs"/>
                     <label for="yellow-certs" class="switch-dot"></label>
 				</div>
+				<h3 class="pulls" style="flex-grow:1">You have 0 pulls</h3>
 			</div>
-			<h3 class="pulls">You have 0 pulls</h3>
+			<div style="flex-grow:2"></div>
 		</div>
 	</body>
 </html>
