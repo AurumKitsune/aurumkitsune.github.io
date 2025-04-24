@@ -9,14 +9,17 @@
 	</head>
 	<body>
 		<header>
-			<div class="navigation-menu">
+			<nav>
+				<div class="hamburger-button">
+                    <input type="checkbox" id="header-menu">
+                    <label for="header-menu"></label>
+				</div>
 				<a class="selected" href="index.html">Home</a>
 				<a href="portfolio.html">Portfolio</a>
 				<a href="arknights-calc.html">AK Pull Calculator</a>
 				<a href="recipes.html">Recipes</a>
-                <div style="flex-grow:1"></div>
-                <button id="theme-button" class="icon-button" onclick="switchTheme()"></button>
-			</div>
+			</nav>
+            <button id="theme-button" class="icon-button" onclick="switchTheme()"></button>
 		</header>
 		<div class="content flex-column center-column">
 			<div style="flex-grow:1"></div>
