@@ -1,5 +1,5 @@
 @import url('color-schemes.css');
-@import url('header.css');
+@import url('input-styles.css');
 
 @font-face {
 	font-family: "Inter";
@@ -51,6 +51,9 @@ p {
 	max-width: 750px;
 }
 
+@media (max-width: 640px) {
+}
+
 .notransition {
 	transition: none !important;
 }
@@ -59,52 +62,11 @@ p {
 	text-align: center;
 }
 
-input[type="text"] {
-	margin: 8px;
-	padding: 16px;
-	background-color: var(--surface);
-	border: 2px solid var(--background);
-	border-radius: 8px;
-	font-size: medium;
-}
-
-input[type="text"]:focus {
-	outline: none !important;
-	border: 2px solid var(--primary);
-}
-
-input[type="text"]::placeholder {
-	opacity: 0.75;
-}
-
-.hamburger-button {
-    content: '';
-}
-
-.outline-button {
-	cursor: pointer;
+header {
+    display: flex;
+	justify-content: space-between;
+	align-items: start;
 	padding: 8px 12px;
-	border: 1px solid var(--outline);
-	border-radius: 100px;
-	background-color: var(--surface);
-}
-
-.outline-button:hover {
-	background-color: var(--surface-variant);
-}
-
-.outline-button:active {
-	border-color: var(--primary);
-	background-color: var(--primary);
-}
-
-.icon-button {
-	cursor: pointer;
-	border: 0;
-	background-color: var(--transparent);
-	color: var(--primary);
-	font-family: "Font Awesome Solid";
-	font-size: 32px;
 }
 
 .primary-color {
@@ -134,54 +96,4 @@ input[type="text"]::placeholder {
 
 .center-column {
 	justify-content: center;
-}
-
-.switch input {
-	display: none;
-}
-
-.switch .switch-label {
-	cursor: pointer;
-	margin-right: 0.6rem;
-}
-
-.switch .switch-dot {
-	cursor: pointer;
-	position: relative;
-	width: 46px;
-	height: 22px;
-	border: 2px solid var(--outline);
-	border-radius: 100px;
-	display: block;
-	background: var(--surface-variant);
-	font-size: 12px;
-	font-family: "Font Awesome Solid";
-	color: var(--background);
-	line-height: 20px;
-	text-align: center;
-}
-
-.switch .switch-dot:after {
-	content: '';
-	position: absolute;
-	top: 1px;
-	left: 1px;
-	width: 20px;
-	height: 20px;
-	background: var(--outline);
-	border-radius: 100px;
-	transform: scale(0.8);
-	transition: 0.25s;
-}
-
-.switch input:checked + .switch-dot{
-	background: var(--primary);
-	border: 2px solid var(--primary);
-}
-
-.switch input:checked + .switch-dot:after {
-	content: '';
-	left: calc(100% - 1px);
-	transform: translateX(-100%);
-	background: var(--text);
 }

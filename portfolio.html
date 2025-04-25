@@ -10,14 +10,17 @@
 		<script src="scripts/theme-switcher.js" defer></script> </head>
 	<body>
 		<header>
-			<div class="navigation-menu">
-				<a href="index.html">Home</a>
-				<a class="selected" href="portfolio.html">Portfolio</a>
-				<a href="arknights-calc.html">AK Pull Calculator</a>
-				<a href="recipes.html">Recipes</a>
-                <div style="flex-grow:1"></div>
-                <button id="theme-button" class="icon-button" onclick="switchTheme()"></button>
+			<div class="hamburger-menu">
+				<input type="checkbox" id="header-menu" class="hamburger-button">
+				<label for="header-menu" class="hamburger-icon"></label>
+				<nav>
+					<a href="index.html">Home</a>
+					<a class="selected" href="portfolio.html">Portfolio</a>
+					<a href="arknights-calc.html">AK Pull Calculator</a>
+					<a href="recipes.html">Recipes</a>
+				</nav>
 			</div>
+			<button id="theme-button" class="icon-button" onclick="switchTheme()"></button>
 		</header>
 		<div class="content portfolio-container">
 			<div>

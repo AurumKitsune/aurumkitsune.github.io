@@ -4,27 +4,28 @@
 		<title>Homepage</title>
 		<meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<link rel="stylesheet" href="css/homepage.css"/>
 		<link rel="stylesheet" href="css/default.css"/>
 		<script src="scripts/theme-switcher.js" defer></script>
 	</head>
 	<body>
 		<header>
-			<nav>
-				<div class="hamburger-button">
-                    <input type="checkbox" id="header-menu">
-                    <label for="header-menu"></label>
-				</div>
-				<a class="selected" href="index.html">Home</a>
-				<a href="portfolio.html">Portfolio</a>
-				<a href="arknights-calc.html">AK Pull Calculator</a>
-				<a href="recipes.html">Recipes</a>
-			</nav>
-            <button id="theme-button" class="icon-button" onclick="switchTheme()"></button>
+			<div class="hamburger-menu">
+				<input type="checkbox" id="header-menu" class="hamburger-button">
+				<label for="header-menu" class="hamburger-icon"></label>
+				<nav>
+					<a class="selected" href="index.html">Home</a>
+					<a href="portfolio.html">Portfolio</a>
+					<a href="arknights-calc.html">AK Pull Calculator</a>
+					<a href="recipes.html">Recipes</a>
+				</nav>
+			</div>
+			<button id="theme-button" class="icon-button" onclick="switchTheme()"></button>
 		</header>
 		<div class="content flex-column center-column">
 			<div style="flex-grow:1"></div>
 			<div class="flex-column center-row" style="flex-grow:1">
-				<h1 class="primary-color" style="font-size:4rem">AurumKitsune</h1>
+				<h1 class="username primary-color">AurumKitsune</h1>
 				<p class="center-text">Hello, I am a computer science student who likes to occasionally stream on Twitch. I enjoy designing and creating video games. I also love to cook and have some of the recipes I use here.</p>
 			</div>
 			<div style="flex-grow:1"></div>

@@ -1,0 +1,9 @@
+.username {
+	font-size: 4rem;
+}
+
+@media (max-width: 640px) {
+	.username {
+		font-size: 3rem;
+	}
+}
