@@ -24,6 +24,7 @@
 .hamburger-icon:after {
 	content: '';
 	color: var(--primary);
+	font-family: "Font Awesome Solid";
 	font-size: 32px;
 }
 
