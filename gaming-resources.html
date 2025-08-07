@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Recipes</title>
+		<meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<link rel="stylesheet" href="css/default.css"/>
+		<script src="scripts/theme-switcher.js" defer></script>
+	</head>
+	<body>
+		<header>
+			<div class="hamburger-menu">
+				<input type="checkbox" id="header-menu" class="hamburger-button">
+				<label for="header-menu" class="hamburger-icon"></label>
+				<nav>
+					<a href="index.html">Home</a>
+					<a href="portfolio.html">Portfolio</a>
+					<a class="selected" href="gaming-resources.html">Gaming Resources</a>
+					<a href="recipes.html">Recipes</a>
+				</nav>
+			</div>
+			<button id="theme-button" class="icon-button" onclick="switchTheme()"></button>
+		</header>
+		<div class="content flex-column center-row">
+			<h2>Resources</h2>
+			<ul>
+				<li><a href="gaming-resources/arknights-pull-calc.html">Arknights Pull Calculator</a></li>
+				<li><a href="gaming-resources/umamusume-score-calc.html">Umamusume Team Trials Score Calculator</a></li>
+			</ul>
+		</div>
+	</body>
+</html>
