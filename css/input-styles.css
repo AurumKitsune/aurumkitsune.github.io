@@ -64,48 +64,29 @@
 .text-input {
 	display: flex;
 	flex-direction: column;
-	gap: 2px;
 	margin: 8px;
-	padding: 2px 8px 8px 8px;
 	background-color: var(--surface);
 	border: 2px solid var(--background);
 	border-radius: 8px;
 }
 
 .text-input label {
+	cursor: text;
+	padding: 0 8px 0 8px;
 	opacity: 0.75;
 	font-size: small;
 }
 
 .text-input input[type="text"] {
+	padding: 0 8px 8px 8px;
 	background: none;
 	border: none;
-	font-size: medium;
+	font-size: x-large;
 }
 
 .text-input input[type="text"]:focus {
 	outline: none !important;
 }
-
-/*
-input[type="text"] {
-	margin: 8px;
-	padding: 16px;
-	background-color: var(--surface);
-	border: 2px solid var(--background);
-	border-radius: 8px;
-	font-size: medium;
-}
-
-input[type="text"]:focus {
-	outline: none !important;
-	border: 2px solid var(--primary);
-}
-
-input[type="text"]::placeholder {
-	opacity: 0.75;
-}
-*/
 
 .outline-button {
 	cursor: pointer;
@@ -133,12 +114,17 @@ input[type="text"]::placeholder {
 	font-size: 32px;
 }
 
+.switch {
+	display: flex;
+}
+
 .switch input {
 	display: none;
 }
 
 .switch .switch-label {
 	cursor: pointer;
+	display: inline;
 	margin-right: 0.6rem;
 }
 
