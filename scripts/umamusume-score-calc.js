@@ -24,7 +24,7 @@ function updateScore() {
 
 	// console.log("orundum: " + orundum + "  originite: " + originite + "  headhunting: " + headhunting + "  certs: " + yellowCerts);
 	
-	let activationChance = Math.pow(Math.max(100 - 9000 / wit, 20) / 100, normalSkills + goldSkills);
+	let activationChance = Math.pow(Math.max(100 - 9000 / wit, 20) / 100, normalSkills + goldSkills + 1);
 
 	activationChanceElement.textContent = `${Math.round(activationChance * 10000) / 100}% chance of all skills activating`;
 	scoreElement.textContent = `${(normalSkills * 500) + (goldSkills * 1200) + (uniqueSkill * 100) + threeStar} potential score`;
