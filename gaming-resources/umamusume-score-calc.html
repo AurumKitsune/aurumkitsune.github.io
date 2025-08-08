@@ -26,9 +26,27 @@
 		<div class="content flex-column center-column">
 			<div style="flex-grow:1"></div>
 			<div class="input-area flex-column center-row" style="flex-grow:2">
-				<input type="text" placeholder="Wit" id="wit"/>
-				<input type="text" placeholder="Normal Skills" id="normal-skills"/>
-				<input type="text" placeholder="Gold Skills" id="gold-skills"/>
+				<div class="text-input">
+					<label for="wit">Wit</label>
+					<input type="text" id="wit" class="input"/>
+				</div>
+				<div class="text-input">
+					<label for="unique-skill">Unique Skill Level</label>
+					<input type="text" id="unique-skill" class="input"/>
+				</div>
+				<div class="switch">
+					<label for="three-star" class="switch-label">3* or above</label>
+					<input type="checkbox" id="three-star" class="input"/>
+                    <label for="three-star" class="switch-dot"></label>
+				</div>
+				<div class="text-input">
+					<label for="gold-skills">Gold Skills</label>
+					<input type="text" id="gold-skills" class="input"/>
+				</div>
+				<div class="text-input">
+					<label for="normal-skills">Normal Skills</label>
+					<input type="text" id="normal-skills" class="input"/>
+				</div>
 				<h3 id="activation-chance">0% chance of all skills activating</h3>
 				<h3 id="score" style="flex-grow:1">0 potential score</h3>
 			</div>
